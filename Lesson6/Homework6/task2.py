@@ -40,7 +40,7 @@ while True:
         user_input = input("Incorrect input. Please enter a real number from 0 to 8 640 000:")
     elif int(user_input) < MIN_VALUE or int(user_input) > MAX_VALUE:
         user_input = input("Incorrect number. Please enter a real number from 0 to 8 640 000:")
-    elif user_input.startswith("0") and len(user_input) < 1:
+    elif user_input.startswith("0") and len(user_input) > 1:
         user_input = input("Incorrect number. Please enter a real number from 0 to 8 640 000:")
     else:
         value = int(user_input)
